@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        StringToIntegerATOI solution = new StringToIntegerATOI();
-        System.out.println(solution.myAtoi("0-1"));
+        PalindromeNumber solution = new PalindromeNumber();
+        System.out.println(solution.isPalindrome2(12321));
     }
 }
