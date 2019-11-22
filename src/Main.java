@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        ReverseInteger solution = new ReverseInteger();
-        System.out.println(solution.reverse(1534236469));
+        StringToIntegerATOI solution = new StringToIntegerATOI();
+        System.out.println(solution.myAtoi("0-1"));
     }
 }
