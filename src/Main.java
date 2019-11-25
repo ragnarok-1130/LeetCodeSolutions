@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        RegularExpressionMatching solution = new RegularExpressionMatching();
-        System.out.println(solution.isMatch("aba", "ab*a*c*a"));
+        ContainerWithMostWater solution = new ContainerWithMostWater();
+        System.out.println(solution.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
     }
 }
