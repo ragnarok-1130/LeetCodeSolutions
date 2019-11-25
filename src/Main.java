@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        PalindromeNumber solution = new PalindromeNumber();
-        System.out.println(solution.isPalindrome2(12321));
+        RegularExpressionMatching solution = new RegularExpressionMatching();
+        System.out.println(solution.isMatch("aba", "ab*a*c*a"));
     }
 }
