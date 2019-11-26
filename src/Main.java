@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        ThreeSum solution = new ThreeSum();
-        System.out.println(solution.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+        ThreeSumClosest solution = new ThreeSumClosest();
+        System.out.println(solution.threeSumClosest(new int[]{1,1,1,1}, 0));
     }
 }
