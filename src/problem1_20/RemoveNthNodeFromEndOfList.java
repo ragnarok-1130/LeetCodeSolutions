@@ -1,5 +1,7 @@
 package problem1_20;
 
+import data_structure.ListNode;
+
 public class RemoveNthNodeFromEndOfList {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int i = 0;

@@ -1,5 +1,7 @@
 package problem1_20;
 
+import data_structure.ListNode;
+
 public class AddTwoNumbers {
     private ListNode result = null;
     private ListNode pointer = null;
@@ -72,11 +74,3 @@ public class AddTwoNumbers {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
