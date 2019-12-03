@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class IntegerToRoman {
     private final static String[][] ROMAN_NUMBER = new String[][]{
             {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"},

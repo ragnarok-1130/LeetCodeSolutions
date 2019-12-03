@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         if (s.length() == 0) {

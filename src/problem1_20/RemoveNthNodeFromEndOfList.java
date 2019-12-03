@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class RemoveNthNodeFromEndOfList {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int i = 0;

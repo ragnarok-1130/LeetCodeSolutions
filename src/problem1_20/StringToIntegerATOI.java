@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class StringToIntegerATOI {
     public int myAtoi(String str) {
         char[] chars = str.toCharArray();

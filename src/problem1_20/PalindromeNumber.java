@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {
         char[] chars = String.valueOf(x).toCharArray();

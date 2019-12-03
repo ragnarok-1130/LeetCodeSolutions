@@ -1,3 +1,5 @@
+package problem1_20;
+
 public class RegularExpressionMatching {
     private Boolean[][] result;
 

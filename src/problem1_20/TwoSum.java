@@ -1,3 +1,5 @@
+package problem1_20;
+
 import java.util.HashMap;
 import java.util.Map;
 

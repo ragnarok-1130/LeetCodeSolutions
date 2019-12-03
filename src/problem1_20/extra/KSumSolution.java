@@ -1,3 +1,5 @@
+package problem1_20.extra;
+
 import java.util.*;
 
 public class KSumSolution {
