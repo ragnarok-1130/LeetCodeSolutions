@@ -1,5 +1,5 @@
 import data_structure.ListNode;
-import problem21_40.ReverseNodesInK_Group;
+import problem21_40.RemoveDuplicatesFromSortedArray;
 
 public class Main {
 
@@ -9,7 +9,7 @@ public class Main {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        ReverseNodesInK_Group solution = new ReverseNodesInK_Group();
-        System.out.println(solution.reverseKGroup(head, 3));
+        RemoveDuplicatesFromSortedArray solution = new RemoveDuplicatesFromSortedArray();
+        System.out.println(solution.removeDuplicates(new int[]{1,1,1,2,2,3}));
     }
 }
