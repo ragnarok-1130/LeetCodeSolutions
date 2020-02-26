@@ -1,5 +1,5 @@
 import data_structure.ListNode;
-import problem21_40.RemoveElement;
+import problem21_40.Implement_strStr;
 
 public class Main {
 
@@ -9,7 +9,7 @@ public class Main {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        RemoveElement solution = new RemoveElement();
-        System.out.println(solution.removeElement(new int[]{1,1,1,2,2,3},2));
+        Implement_strStr solution = new Implement_strStr();
+        System.out.println(solution.strStr("aabaaabaaac","aabaaac"));
     }
 }
