@@ -1,15 +1,14 @@
-import data_structure.ListNode;
-import problem21_40.Implement_strStr;
+import problem21_40.DivideTwoIntegers;
 
 public class Main {
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        Implement_strStr solution = new Implement_strStr();
-        System.out.println(solution.strStr("aabaaabaaac","aabaaac"));
+        DivideTwoIntegers solution = new DivideTwoIntegers();
+        try {
+            //-2147483648
+            System.out.println(solution.divide(-2147483647,2));
+        }catch (Exception e){
+
+        }
     }
 }
