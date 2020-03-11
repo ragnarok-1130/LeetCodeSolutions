@@ -1,13 +1,12 @@
-import problem21_40.DivideTwoIntegers;
+import problem21_40.SubstringWithConcatenationOfAllWords;
 
 public class Main {
 
     public static void main(String[] args) {
-        DivideTwoIntegers solution = new DivideTwoIntegers();
+        SubstringWithConcatenationOfAllWords solution = new SubstringWithConcatenationOfAllWords();
         try {
-            //-2147483648
-            System.out.println(solution.divideVerTwo(2147483647,1));
-        }catch (Exception e){
+            System.out.println(solution.findSubstring("barfoothefoobarman", new String[]{"foo", "bar"}));
+        } catch (Exception e) {
 
         }
     }
