@@ -1,13 +1,13 @@
-import problem21_40.SubstringWithConcatenationOfAllWords;
+import problem21_40.NextPermutation;
+
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        SubstringWithConcatenationOfAllWords solution = new SubstringWithConcatenationOfAllWords();
-        try {
-            System.out.println(solution.findSubstring("barfoothefoobarman", new String[]{"foo", "bar"}));
-        } catch (Exception e) {
-
-        }
+        NextPermutation solution = new NextPermutation();
+        int[] nums = new int[]{1, 3, 2};
+        solution.nextPermutation(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
