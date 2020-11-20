@@ -1,12 +1,11 @@
-import problem21_40.LongestValidParentheses;
+import problem21_40.SearchInRotatedSortedArray;
 
-import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        LongestValidParentheses solution = new LongestValidParentheses();
-        int validNum = solution.longestValidParentheses("()");
+        SearchInRotatedSortedArray solution = new SearchInRotatedSortedArray();
+        int validNum = solution.search(new int[]{1}, 0);
         System.out.println(validNum);
     }
 }
