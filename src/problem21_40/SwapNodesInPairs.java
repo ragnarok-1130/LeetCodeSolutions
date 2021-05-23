@@ -33,4 +33,38 @@ public class SwapNodesInPairs {
         node2.next = node1;
         return head;
     }
+
+    public ListNode swapPairsV2(ListNode head) {
+        // 前前节点
+        ListNode prevPrevNode = null;
+        // 前一个节点
+        ListNode prevNode = null;
+        // 新头部节点
+        ListNode headNode = head;
+
+        int index = 1;
+        while (head != null) {
+            ListNode temp = head;
+            head = head.next;
+            if (index % 2 == 0) {
+                // 下标为偶数时交换
+                prevNode.next = temp.next;
+                temp.next = prevNode;
+                if (prevPrevNode != null) {
+                    prevPrevNode.next = temp;
+                }
+                // 交换后 前一节点往前移动一位  此时前前节点 = 原始前一节点
+                prevPrevNode = prevNode;
+                if (index == 2) {
+                    // 第一次交换时的节点即为新头部节点
+                    headNode = temp;
+                }
+            } else {
+                // 下标为奇数
+                prevNode = temp;
+            }
+            index++;
+        }
+        return headNode;
+    }
 }
