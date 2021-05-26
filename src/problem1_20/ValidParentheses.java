@@ -23,10 +23,7 @@ public class ValidParentheses {
                 }
             }
         }
-        if (leftParentheses.size() != 0) {
-            return false;
-        }
-        return true;
+        return leftParentheses.size() == 0;
     }
 
 
