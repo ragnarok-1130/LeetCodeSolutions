@@ -28,4 +28,42 @@ public class ValidParentheses {
         }
         return true;
     }
+
+
+    public boolean isValidV2(String s) {
+        Stack<Character> stack = new Stack<>();
+        if (s == null) {
+            return false;
+        }
+        char[] sac = s.toCharArray();
+        for (char c : sac) {
+            switch (c) {
+                case ')':
+
+                    if (stack.empty() || stack.pop() != '(') {
+                        return false;
+                    }
+                    break;
+                case ']':
+                    if (stack.empty() || stack.pop() != '[') {
+                        return false;
+                    }
+                    break;
+                case '}':
+                    if (stack.empty() || stack.pop() != '{') {
+                        return false;
+                    }
+                    break;
+                case '(':
+                case '[':
+                case '{':
+                    stack.push(c);
+                    break;
+                default:
+                    return false;
+            }
+        }
+        // 栈清空则表示所有右括号均匹配到对应左括号
+        return stack.empty();
+    }
 }
