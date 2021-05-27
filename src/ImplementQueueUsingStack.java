@@ -108,4 +108,68 @@ public class ImplementQueueUsingStack {
             return s1.empty() && s2.empty();
         }
     }
+
+    /**
+     * 性能优化  仅需翻转一次
+     */
+    static class MyQueueV2 {
+
+        private final Stack<Integer> input;
+        private final Stack<Integer> output;
+
+
+        /**
+         * Initialize your data structure here.
+         */
+        public MyQueueV2() {
+            input = new Stack<>();
+            output = new Stack<>();
+        }
+
+        /**
+         * Push element x to the back of queue.
+         */
+        public void push(int x) {
+            input.push(x);
+        }
+
+        /**
+         * Removes the element from in front of queue and returns that element.
+         */
+        public int pop() {
+            if (input.empty() && output.empty()) {
+                return -1;
+            }
+            if (output.empty()) {
+                while (!input.empty()) {
+                    output.push(input.pop());
+                }
+            }
+            return output.pop();
+        }
+
+        /**
+         * Get the front element.
+         */
+        public int peek() {
+            if (input.empty() && output.empty()) {
+                return -1;
+            }
+            if (output.empty()) {
+                while (!input.empty()) {
+                    output.push(input.pop());
+                }
+            }
+            int val = output.pop();
+            output.push(val);
+            return val;
+        }
+
+        /**
+         * Returns whether the queue is empty.
+         */
+        public boolean empty() {
+            return input.empty() && output.empty();
+        }
+    }
 }
