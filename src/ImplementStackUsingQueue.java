@@ -60,20 +60,8 @@ public class ImplementStackUsingQueue {
             if (q1.isEmpty() && q2.isEmpty()) {
                 return -1;
             }
-            int val;
-            if (q1.isEmpty()) {
-                val = q2.poll();
-                q1.add(val);
-                while (!q2.isEmpty()) {
-                    q1.add(q2.poll());
-                }
-            } else {
-                val = q1.poll();
-                q2.add(val);
-                while (!q1.isEmpty()) {
-                    q2.add(q1.poll());
-                }
-            }
+            int val = this.pop();
+            this.push(val);
             return val;
         }
 
